@@ -1,0 +1,20 @@
+body {
+margin:0;
+background-color:#e5e5e5;
+}
+
+.headerWrapper {
+background-image:url('../images/header_bg.png');
+height:219px;
+}
+
+.header {
+background-image:url('../images/header.png');	
+background-repeat:no-repeat;
+background-position:90px 0%;
+height:219px;
+}
+
+.header #navigation {
+
+}

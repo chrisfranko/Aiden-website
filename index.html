@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">	
+<link rel="stylesheet" type="text/css" href="css/jmenu.css" media="screen" />
+ 
+<!-- jQuery files -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jMenu.jquery.min.js"></script>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    // simple jMenu plugin called
+    $("#jMenu").jMenu();
+ 
+    // more complex jMenu plugin called
+    $("#jMenu").jMenu({
+      ulWidth : 'auto',
+      effects : {
+        effectSpeedOpen : 300,
+        effectTypeClose : 'slide'
+      },
+      animatedText : false
+    });
+  });
+</script>
+
+</head>
+<body>
+
+<div class="headerWrapper">
+	<div class="header">
+			
+		<ul id="jMenu">
+		  <li><a>Home</a></li>	
+		  <li><a>Mining</a></li>		  
+		  <li><a>Downloads</a></li>
+		  <li><a>Exchanges</a></li>
+		  <li><a>Press</a></li>
+		  <li><a>Contact</a></li>
+		</ul>
+			
+	
+	</div>
+</div>
+
+</body>
+</html>
