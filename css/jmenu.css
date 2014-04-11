@@ -1,5 +1,5 @@
-.jMenu{display:table;margin:0;padding:0;list-style:none;position:absolute;top:183px;left:475px;}
-.jMenu li{display:inline-block;background-color:#216ea0;margin:0 0 0 5px;list-style:none}
+.jMenu{display:table;margin:0;padding:0;list-style:none;position:relative;top:187px;left:442px;}
+.jMenu li{display:inline-block;background-color:#216ea0;margin:0 0 0 10px;list-style:none}
 .jMenu li a{padding:10px 15px;display:block;background-color:transparent;color:#fff;text-transform:uppercase;cursor:pointer;font-size:12px;font-family:Lucida Sans Unicode;}
 .jMenu li a:hover{background-color:#3a3a3a}
 .jMenu li:hover>a{background-color:#3a3a3a}
