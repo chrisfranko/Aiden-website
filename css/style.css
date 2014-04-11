@@ -145,6 +145,16 @@ font-size:1.3em;
 	color:#2b8bc9;
 }
 
+h1.construction {
+font-family:Lucida Sans Unicode;	
+font-size:2em;
+font-weight:700;
+color:#155b89;
+text-shadow: 2px 2px 1px #000;
+position:absolute;
+margin-left:20%;
+margin-top:50px;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
