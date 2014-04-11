@@ -36,18 +36,31 @@ font-family:Lucida Sans Unicode;
 font-size:2em;
 font-weight:700;
 color:#155b89;
+text-shadow: 2px 2px 1px #e5e5e5;
 }
 
 .content h2 {
 font-family:Lucida Sans Unicode;	
 font-size:1em;
+font-variant:small-caps;
 color:#2b8bc9;
+text-shadow: 0 0 5px #ffffff;
+margin-bottom:.5em;
+}
+
+.content h4 {
+font-family:Lucida Sans Unicode;	
+font-size:.9em;
+color:#155b89;
+text-shadow: 0 0 5px #ffffff;
+margin-bottom:.5em;
+margin-top:.5em;
 }
 
 .content p {
 font-family:Lucida Sans Unicode;	
 font-size:.80em;
-margin-top:.5em;
+margin:1em 0em;
 color:#8e9396;
 }
 
@@ -55,7 +68,7 @@ color:#8e9396;
 width:100%;
 margin:20px auto;
 border:0;
-border-top:1px solid #677f8f;
+border-top:6px solid #3091d1;
 }
 
 .content ul {
@@ -73,48 +86,65 @@ color:#8e9396;
 }
 
 .sideBox {
-	width:20%;
-	float:right;
-	border-left:1px solid #e5e5e5;
-	border-top:1px solid #e5e5e5;
-	border-right:1px solid #f5f3f3;
-	border-bottom:1px solid #f5f3f3;
-	padding:0em 0em 0em 0em;
-	text-align:center;
+width:20%;
+float:right;
+border-left:1px solid #e5e5e5;
+border-top:1px solid #e5e5e5;
+border-right:1px solid #f5f3f3;
+border-bottom:1px solid #f5f3f3;
+padding:0em 0em 0em 0em;
+text-align:center;
 }
 
 .sideBox h3 {
-	font-family:Lucida Sans Unicode;	
-	color:#155b89;
-	font-size:1.1em;
-	padding: .5em 0em;
-	
-	text-transform:uppercase;
-	background-color:#fbfbfb;
+font-family:Lucida Sans Unicode;	
+color:#155b89;
+font-size:1.1em;
+padding: .5em 0em;
+text-transform:uppercase;
+background-color:#fbfbfb;
 }
 
 .sideBox ul {
-	list-style-type:square;
-	color:#155b89;
-	margin:.5em 2em;
+list-style-type:square;
+color:#155b89;
+margin:.5em 2em;
 }
 
 .sideBox li {
-	text-align:left;
-	margin-top:1.25em;
-	margin-bottom:1.25em;
-	font-size:.85em;
+text-align:left;
+margin-top:1.25em;
+margin-bottom:1.25em;
+font-size:.85em;
 }
 
 .sideBox li:first-child {
-	margin-top:0em;
+margin-top:0em;
 }
 
 .sideBox li div {
-	color:#303335;
-	margin-bottom:.2em;
-	font-size:1.3em;
+color:#303335;
+margin-bottom:.2em;
+font-size:1.3em;
 }
+
+.downloadLinks {
+	margin-top:1.5em !important;
+}
+
+.downloadLinks li {
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+.downloadLinks li a {
+	color:#155b89;
+}
+
+.downloadLinks li a:hover {
+	color:#2b8bc9;
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
