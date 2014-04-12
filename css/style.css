@@ -26,9 +26,14 @@ height:219px;
 }
 
 .header {
-background-image:url('../images/header.png');	
+background-image:url('../images/header_sprite.png');	
 background-repeat:no-repeat;
 background-position:42px 0%;
+height:219px;
+}
+
+.header:hover {
+background-position:42px -219px;;
 height:219px;
 }
 
