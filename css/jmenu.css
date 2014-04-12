@@ -7,3 +7,4 @@
 .jMenu li ul li a{font-size:11px;text-transform:none;display:block;padding:7px;border-top:1px solid transparent;border-bottom:1px solid transparent}
 .jMenu li ul li a.isParent{background-color:#3a3a3a}
 .jMenu li ul li a:hover{background-color:#514c52;border-top:1px solid #322f32;border-bottom:1px solid #322f32}
+.jMenu li a.selected{background-color:#3a3a3a}

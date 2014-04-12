@@ -1,31 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">	
 <link rel="stylesheet" type="text/css" href="css/style.css">	
 <link rel="stylesheet" type="text/css" href="css/jmenu.css" media="screen" />
  
-<!-- jQuery files -->
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/jMenu.jquery.min.js"></script>
-
-
-<script type="text/javascript">
-  $(document).ready(function(){
-    // simple jMenu plugin called
-    $("#jMenu").jMenu();
- 
-    // more complex jMenu plugin called
-    $("#jMenu").jMenu({
-      ulWidth : 'auto',
-      effects : {
-        effectSpeedOpen : 300,
-        effectTypeClose : 'slide'
-      },
-      animatedText : false
-    });
-  });
-</script>
+<script type="text/javascript" src="js/aiden.js"></script>
 
 </head>
 <body>
@@ -36,62 +19,77 @@
 	
 	<div class="header">
 		
-		<h1 class="construction">Currently Under Construction...</h1>
-		
 		<ul id="jMenu">
-		  <li><a>Home</a></li>	
-		  <li><a>Mining</a></li>		  
-		  <li><a>Downloads</a></li>
-		  <li><a>Exchanges</a></li>
-		  <li><a>Press</a></li>
-		  <li><a>Contact</a></li>
+		  <li><a class="navLink selected" rel="home">Home</a></li>	
+		  <li><a class="navLink" rel="mining">Mining</a></li>		  
+		  <li><a class="navLink" rel="downloads">Downloads</a></li>
+		  <li><a class="navLink" rel="exchanges">Exchanges</a></li>
+		  <li><a class="navLink" rel="press">Press</a></li>
+		  <li><a class="navLink" rel="contact">Contact</a></li>
 		</ul>
-			
-	
+				
 	</div>
 </div>
 
-<div class="content">
+<div id="home" class="content active">
 
 <div class="content sideBox">
-
-<h3>Recent Updates</h3>
-<ul>
-	<li>
-	<div>Website Launch!</div>
-	Still working on it.
-</li>
-
-<li>
-	<div>Added to PoloniEX.com!</div>
-	Awesome!
-</li>
-
-<li>
-	<div>Added to Allcoin.com!</div>
-	Spectacular!
-</li>
-</ul>
-
+	<h3>Recent Updates</h3>
+	<ul>
+		<li>
+		<div>Website Launch!</div>
+		Still working on it.
+		</li>
+	
+		<li>
+			<div>Added to PoloniEX.com!</div>
+			Awesome!
+		</li>
+	
+		<li>
+			<div>Added to Allcoin.com!</div>
+			Spectacular!
+		</li>
+	</ul>
 </div>
 
-<div id="home">
-	<h1>Welcome to Aiden</h1>
-	<h2>the first cryptocurrency to use Scrypt-OG</h2>
-	<p>Once upon a time long long ago, the cryptocurrency community was divided by a great gpu vs cpu civil war. Cpu miners were mad they could no longer get many bitcoins with their intel celerons and the migration to scrypt started. The original implementation of scrypt was a short term fix that only kept GPUs down for a few months. Fast forward to today, gpu miners aren't as rare as they once were and there is a new enemy in town. The EVIL ASIC!</p>
+<h1>Welcome to Aiden</h1>
+<h2>the first cryptocurrency to use Scrypt-OG</h2>
+<p>Once upon a time long long ago, the cryptocurrency community was divided by a great gpu vs cpu civil war. Cpu miners were mad they could no longer get many bitcoins with their intel celerons and the migration to scrypt started. The original implementation of scrypt was a short term fix that only kept GPUs down for a few months. Fast forward to today, gpu miners aren't as rare as they once were and there is a new enemy in town. The EVIL ASIC!</p>
+
+<h4>Not ready to throw away your GPU investment?! MINE AIDEN!</h4>
+
+<p>Aiden uses an optimized version of scrypt that is 8x less memory intensive than traditional scrypt. GPU miners will get more out of their hardware AND mine a coin that is currently asic resistant. Remember, nothing is ASIC intolerant, but the cost to develop an asic for Scrypt-OG is currently a deterrent.
+Summer is coming. Are you ready for the power bill? if you want to keep mining/profiting switch to this more efficient coin.</p>
+
+<p>Fair is fun...</p>
+
+<h4>No premine! No IPO!</h4>
+
+<br />
+
+<h1>Downloads</h1>
+<h2>start mining today</h2>
+<ul>
+	<li><a href="http://www.github.com/chrisfranko/aiden.git">Github</a></li>
+	<li><a href="https://www.dropbox.com/s/2exx8vcmjzil572/aiden-0.8.6.1-win32-setup.zip">Win32</a></li>
+	<li><a href="http://www.mediafire.com/download/vciesyod842l9sf/Aiden-Qt-MacOSX-v0862.zip">Mac</a></li>
+	<li><a href="http://www.sgminerwindows.com">SGMiner</a></li>
+</ul>
 	
-	<h4>Not ready to throw away your GPU investment?! MINE AIDEN!</h4>
+</div>
 
-	<p>Aiden uses an optimized version of scrypt that is 8x less memory intensive than traditional scrypt. GPU miners will get more out of their hardware AND mine a coin that is currently asic resistant. Remember, nothing is ASIC intolerant, but the cost to develop an asic for Scrypt-OG is currently a deterrent.
-	Summer is coming. Are you ready for the power bill? if you want to keep mining/profiting switch to this more efficient coin.</p>
+<div id="mining" class="content hidden">
 
-	<p>Fair is fun...</p>
+	<h1>Coming Soon...</h1>
+	
+</div>
 
-	<h4>No premine! No IPO!</h4>
-	<br />
+<div id="downloads" class="content hidden">
+
 	<h1>Downloads</h1>
-	<h2>starting mining today</h2>
-	<ul class="downloadLinks">
+	<h2>start mining today</h2>
+	<ul>
 		<li><a href="http://www.github.com/chrisfranko/aiden.git">Github</a></li>
 		<li><a href="https://www.dropbox.com/s/2exx8vcmjzil572/aiden-0.8.6.1-win32-setup.zip">Win32</a></li>
 		<li><a href="http://www.mediafire.com/download/vciesyod842l9sf/Aiden-Qt-MacOSX-v0862.zip">Mac</a></li>
@@ -100,21 +98,28 @@
 	
 </div>
 
-<div id="mining" style="display:none">
-	<h1>Heading 1</h1>
-	<h2>Heading 2</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed sapien luctus, commodo dolor non, varius tortor. Phasellus quis bibendum massa. Donec pellentesque at lorem quis rutrum. Ut id eleifend eros. Curabitur dapibus eros a leo consequat egestas. Pellentesque lacus nibh, feugiat vitae malesuada vitae, pulvinar id lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam sed risus ante.</p>
-	
-	<p>Vestibulum vehicula, risus in suscipit suscipit, diam turpis lacinia est, non rhoncus massa massa sed sem. Aenean malesuada pretium varius. Nulla facilisi. Pellentesque quis tristique justo. Vestibulum blandit nibh at turpis convallis rhoncus. Nulla facilisi. Aenean tincidunt lorem nec urna elementum ultricies. Etiam sed bibendum ipsum. Phasellus libero felis, interdum ut sollicitudin id, hendrerit in sapien. Proin ut viverra erat. Suspendisse potenti. Suspendisse malesuada suscipit lectus, id facilisis justo dapibus sed. Donec eu erat sem.</p>
-	
+<div id="exchanges" class="content hidden">
+
+	<h1>Exchanges</h1>
+	<h2>start trading today</h2>
 	<ul>
-		<li>List 1</li>
-		<li>List 2</li>
-		<li>List 3</li>
-		<li>List 4</li>
+		<li><a href="https://poloniex.com/exchange/btc_adn">PoloniEX</a></li>
+		<li><a href="https://www.allcoin.com/trade/AIDEN_BTC">AllCoin</a></li>
+		<li><a href="https://coinaccel.com/#market/13">CoinAccel</a></li>
 	</ul>
+	
 </div>
 
+<div id="press" class="content hidden">
+
+	<h1>Coming Soon...</h1>
+	
+</div>
+
+<div id="contact" class="content hidden">
+
+	<h1>Coming Soon...</h1>
+	
 </div>
 
 </div>
