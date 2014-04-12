@@ -32,7 +32,14 @@ background-position:42px 0%;
 height:219px;
 }
 
-.header:hover {
+.aiden {
+position: absolute;
+height: 219px;
+width: 145px;
+margin-left: 75px;
+}
+
+.glow {
 background-position:42px -219px;;
 height:219px;
 }

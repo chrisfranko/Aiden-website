@@ -21,5 +21,14 @@ $('.navLink').click(function() {
 	$('#'+rel+'').addClass('active').show( "fade", { direction: "down" }, "slow" ).removeClass('hidden');
 	$(this).addClass('selected');
 });
+
+// cool glowing effect
+$('.aiden').hover(
+  function() {
+    $('.header').addClass('glow');
+  }, function() {
+    $('.header').removeClass('glow');
+  }
+);
 	
 });
