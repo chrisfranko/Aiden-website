@@ -16,6 +16,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/jMenu.jquery.min.js"></script>
 <script type="text/javascript" src="js/aiden.js"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -53,24 +54,24 @@
 
 <div class="content sideBox">
 
-<h3>Recent Updates</h3>
+<h1 class="subHeader">Where do I begin?</h1>
+	<h2>configure your miner for aiden</h2>
+	
+	<br />
+	
+	<div class="quickLink">
+	<div>&nbsp;</div>
+	<span class="navLink" rel="mining">Mine Aiden</span>
+	</div>
 
-	<ul>
-		<li>
-		<div>Website Launch!</div>
-		Still working on it.
-		</li>
+	<br /><br />
+
+	<div class="quickLink">
+	<div>&nbsp;</div>
+	<span class="navLink" rel="downloads">Download Wallet</span>
+	</div>
 	
-		<li>
-			<div>Added to PoloniEX.com!</div>
-			Awesome!
-		</li>
 	
-		<li>
-			<div>Added to Allcoin.com!</div>
-			Spectacular!
-		</li>
-	</ul>
 </div>
 
 <h1>Welcome to Aiden</h1>
@@ -85,33 +86,84 @@ Summer is coming. Are you ready for the power bill? if you want to keep mining/p
 <p>Fair is fun...</p>
 
 <h4>No premine! No IPO!</h4>
+
+<br />
+<!--
+<h1 class="subHeader">What is Scrypt-OG?</h1>
+<h2>a smarter. faster. future.</h2>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam turpis urna, semper facilisis ante id, convallis laoreet augue. Duis tempor pretium quam, elementum sollicitudin elit consequat ac. Aenean venenatis orci eget quam varius, in condimentum velit malesuada. Maecenas aliquet purus sit amet consectetur dapibus. Suspendisse sed lacus est. Ut rhoncus ullamcorper felis sed bibendum. Quisque vulputate eu ante quis faucibus. Nullam consequat accumsan feugiat. Aliquam quis egestas est. Maecenas rhoncus, nibh quis cursus sollicitudin, nisl enim auctor turpis, in fermentum mauris purus et neque.
+</p>
+-->	
 	
 </div>
 
 <div id="mining" class="content hidden">
 
-	<h1>Coming Soon...</h1>
+	<div class="leftContent" style="width:248px;">
+		<h1>Start Mining</h1>
+		<h2>grab your pickaxe</h2>
+		<ul>
+			<li><a href="https://github.com/veox/sgminer">SGMiner</a> (Linux)</li>
+			<li><a href="http://www.sgminerwindows.com">SGMiner</a> (Windows)</li>
+		</ul>
+		
+		<h2>configuration files</h2>
+		
+		<ul class="conf">
+			<li><a rel="AMD_290x.txt">AMD 290x</a></li>
+		</ul>
+		
+		<br />
+		
+	</div>
+	
+	<div class="rightContent" id="mining_header">
+	<h1>How do I mine Aiden?</h1>
+	<h2>Aiden utilizes an n-factor which has been optimized for gpu mining</h2>
+	
+	<p>Regardless of operating system, there's only one setting you really need to be aware of.</p>
+	
+	<h4>sgminer --nfactor 6</h4>
+	
+	<p>Once you've downloaded your miner, you'll need to set up a basic set of options. The most important setting is shown above, however there's a great deal of customization you can do in order to get the most out of your rig. Choose your card from the list on the left and you'll be provided a basic configuration file to get started with.</p>
+	
+	</div>
+	
+	<div class="rightContent hidden" id="mining_config">
+	<!-- Begin Codebox Area -->
+	
+	<h1 id="config_header">Mining Configuration: AMD 290x</h1>
+	<h2>the following configuration file has been provided by the community... caveat emptor!</h2>
+	<div class="codeBox">
+	
+<pre><code id="config_code"></code></pre>
+	
+	</div>
+	
+	<!-- End Codebox Area -->
+	</div>
+	
+	<div style="clear:both"></div>
 	
 </div>
 
 <div id="downloads" class="content hidden">
 
-	<div class="leftContent">
+	<div class="leftContent" style="width:230px;">
 		<h1>Downloads</h1>
-		<h2>get your wallet & miner</h2>
+		<h2>get your wallet</h2>
 		<ul>
 			<li><a href="http://www.github.com/chrisfranko/aiden.git">Github</a> (Source)</li>
 			<li><a href="https://www.dropbox.com/s/2exx8vcmjzil572/aiden-0.8.6.1-win32-setup.zip">Windows</a> (Binary)</li>
 			<li><a href="http://www.mediafire.com/download/vciesyod842l9sf/Aiden-Qt-MacOSX-v0862.zip">Mac</a> (Binary)</li>
-			<li><a href="https://github.com/veox/sgminer">SGMiner</a> (Linux)</li>
-			<li><a href="http://www.sgminerwindows.com">SGMiner</a> (Windows)</li>
 		</ul>
 	</div>
 	
 	<div class="rightContent">
 	<h1>Getting started with Aiden</h1>
-	
 	<h2>whether you're a linux pro or a devoted mac user we've got you covered.</h2>
+	
 	<p>Select your desired format from the list on the left. This will generate an Aiden address for you and you'll be all set to start sending and receiving coins. If you're interested in mining, we suggest SGMiner. This versatile mining software allows you to make the customizations necessary to take advantage of Scrypt-OG.</p>
 	<p>For more information on how to configure your rig, be sure to check out the Mining page.</p>
 	</div>
