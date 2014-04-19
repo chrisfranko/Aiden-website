@@ -157,11 +157,38 @@ margin-bottom:.2em;
 font-size:1.3em;
 }
 
+.quickLink {
+	height:1em;
+	line-height:1em;
+	margin:1em;
+	display:inline;
+}
+
+.quickLink:hover {
+	cursor:pointer;
+}
+
+.quickLink:hover div { background-color:#3a3a3a; }
+.quickLink:hover span {  }
+
+.quickLink div {
+	display:inline-block;
+	background-color:#216ea0; 
+	height:1em; 
+	width:1em;
+}
+
+.quickLink span {
+	display:inline;	
+	font-size: .85em;
+	font-family: Lucida Sans Unicode;
+	color:#155b89;
+}
+
 .leftContent {
 float:left;
 border-right:2px solid #6691ad;
 margin-right:3em;
-width:230px;
 }
 
 .rightContent {

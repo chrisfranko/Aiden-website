@@ -19,7 +19,7 @@ $('.navLink').click(function() {
 	$('.active').addClass('hidden').removeClass('active');
 	$('.selected').removeClass('selected');
 	$('#'+rel+'').addClass('active').show( "fade", { direction: "down" }, "slow" ).removeClass('hidden');
-	$(this).addClass('selected');
+	$('a[rel='+rel+'').addClass('selected');
 });
 
 // cool glowing effect
