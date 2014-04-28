@@ -46,13 +46,14 @@ $('.conf li a').click(function() {
 	
 });
 
-// cool glowing effect
+// cool glowing effect - will bring back at some point...
+/*
 $('.aiden').hover(
   function() {
     $('.header').addClass('glow');
   }, function() {
     $('.header').removeClass('glow');
   }
-);
+);*/
 	
 });
