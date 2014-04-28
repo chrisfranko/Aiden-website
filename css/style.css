@@ -21,33 +21,28 @@ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .headerWrapper {
-background-image:url('../images/header_bg.png');
-height:219px;
+background-color:#369ee2;
+height:172px;
 }
 
 .header {
-background-image:url('../images/header_sprite.png');	
+background-image:url('../images/aiden_header.png');	
 background-repeat:no-repeat;
 background-position:42px 0%;
-height:219px;
+height:172px;
 }
 
-.aiden {
-position: absolute;
-height: 219px;
-width: 145px;
-margin-left: 75px;
-}
-
-.glow {
-background-position:42px -219px;;
-height:219px;
+.main {
+background-image:url('../images/aiden_subHeader.png');	
+background-repeat:no-repeat;
+background-position:105px 0%;
 }
 
 .content {
 margin:0px 30px;
 clear: both;
 padding:30px;
+padding-top:50px;
 }
 
 h1 {
@@ -140,7 +135,8 @@ padding:0px;
 .hidden { display: none; }
 
 .sideBox {
-padding-top:55px;
+padding-top:7px;
+padding-right:0px;
 margin:0px 0px 30px 30px;
 width:340px;
 float:right;
