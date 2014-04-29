@@ -1,6 +1,6 @@
 html, body {
 margin:0;
-background-color:#e9f0f4;
+background-color:#369ee2;
 font-size:12pt;
 }
 
@@ -10,25 +10,30 @@ display:none !important;
 
 .wrapper {
 min-width:1024px;
-max-width:1440px;
 margin: 0 auto;
 height:100%;
 min-height:100%;
 background-color:#fcfdfd;
--webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
--moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .headerWrapper {
-background-color:#369ee2;
+background-image:url('../images/header_wrapper.png'); /* cheating */
+background-repeat:no-repeat;
+background-position:0px 0%;
+background-color:#16519b;	
+width:100%;
+}
+
+.headerAlign {
 height:172px;
+max-width: 1640px;
+margin: 0 auto;
 }
 
 .header {
 background-image:url('../images/aiden_header.png');	
 background-repeat:no-repeat;
-background-position:42px 0%;
+background-position:0px 0%;
 height:172px;
 }
 
@@ -36,13 +41,15 @@ height:172px;
 background-image:url('../images/aiden_subHeader.png');	
 background-repeat:no-repeat;
 background-position:105px 0%;
+max-width: 1640px;
+margin: 0 auto;
 }
 
 .content {
-margin:0px 30px;
+margin:0px 75px;
 clear: both;
 padding:30px;
-padding-top:50px;
+padding-top:60px;
 }
 
 h1 {
@@ -137,8 +144,8 @@ padding:0px;
 .sideBox {
 padding-top:7px;
 padding-right:0px;
-margin:0px 0px 30px 30px;
-width:340px;
+margin:0px 0px 30px 15px;
+width:240px;
 float:right;
 }
 
