@@ -88,7 +88,7 @@ margin-bottom:.5em;
 }
 
 .calc_table {
-width: 300px; 
+width: 320px; 
 margin-right:25px; 
 float:left;
 }
@@ -109,6 +109,7 @@ text-shadow: 0 0 5px #ffffff;
 
 .output_table {
 margin-top:29px;
+
 }
 
 .calc_outputs {
