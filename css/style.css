@@ -78,6 +78,77 @@ margin-bottom:.5em;
 margin-top:.5em;
 }
 
+label {
+font-family:Lucida Sans Unicode;	
+font-size:1em;
+font-variant:small-caps;
+color:#2b8bc9;
+text-shadow: 0 0 5px #ffffff;
+margin-bottom:.5em;
+}
+
+.calc_table {
+width: 300px; 
+margin-right:25px; 
+float:left;
+}
+
+.calc_labels {
+text-align:right;
+padding-right:10px;
+padding-top:5px;
+padding-bottom:5px;
+}
+
+.calc_values {
+font-family:Lucida Sans Unicode;	
+font-size:.9em;
+color:#155b89;
+text-shadow: 0 0 5px #ffffff;	
+}
+
+.output_table {
+margin-top:29px;
+}
+
+.calc_outputs {
+width:65px;  
+height:45px;
+text-align:right;
+padding-right:5px;
+}
+
+.calc_outputs label span { color:#155b89; font-weight:bold; }
+
+input[type="text"] {
+width:60px;
+padding:2px;
+font-size:.8em;
+font-family:Lucida Sans Unicode;
+}
+
+.distribution {
+
+}
+
+.distribution td {
+padding:6px 10px;
+font-family:Lucida Sans Unicode;
+color:#8e9396;
+font-size:.80em;
+text-align:center;
+}
+
+.dist_headers td {
+font-family:Lucida Sans Unicode;	
+font-size:1em;
+font-variant:small-caps;
+color:#2b8bc9;
+text-shadow: 0 0 5px #ffffff;
+}
+
+.current_block td { font-weight:bold; color:#155b89; }
+
 p {
 font-family:Lucida Sans Unicode;	
 font-size:.80em;

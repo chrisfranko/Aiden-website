@@ -46,6 +46,34 @@ $('.conf li a').click(function() {
 	
 });
 
+
+// get current mining difficulty
+$.post("api/get_difficulty.php",
+  {
+    getdiff:'true'
+  },
+  function(data,status){
+    $('#difficulty').val(data);
+  });	
+
+$.post("api/get_blockcount.php",
+  {
+    getdiff:'true'
+  },
+  function(data,status){
+  	
+  	var blockReward = 50;
+  	if (data <= 210000) { blockReward = 50; $('#dist_1').addClass('current_block'); }
+  	if (data > 210000 && data <= 420000) { blockReward = 25; $('#dist_2').addClass('current_block'); }
+  	if (data > 420000 && data <= 840000) { blockReward = 12.5; $('#dist_3').addClass('current_block'); }
+  	if (data > 840000 && data <= 1680000) { blockReward = 6.25; $('#dist_4').addClass('current_block'); }
+  	if (data > 1680000 && data <= 3360000) { blockReward = 3.125; $('#dist_5').addClass('current_block'); }
+  	if (data > 3360000) { blockReward = 3.125; $('#dist_6').addClass('current_block'); }
+  	
+  	$('#reward').val(blockReward);
+    
+  });	
+
 // cool glowing effect - will bring back at some point...
 /*
 $('.aiden').hover(

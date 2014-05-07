@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 <meta name="description" content="Using an optimized mining algorithm through an open-source network, Aiden revolutionizes the way we'll make day to day transactions." />
 <meta name="keywords" content="Aiden, Aidencoin, Aiden Coin, Cryptocurrency, scrypt-og, Crypto Currency" />
 <meta name="author" content="metatags generator">
@@ -16,6 +17,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/jMenu.jquery.min.js"></script>
 <script type="text/javascript" src="js/aiden.js"></script>
+<script type="text/javascript" src="js/calculator.js"></script>
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 
 <script>
@@ -57,7 +59,7 @@
 
 <div class="content sideBox">
 
-<h1 class="subHeader">Where do I begin?</h1>
+	<h1 class="subHeader">Where do I begin?</h1>
 	<h2>configure your miner for aiden</h2>
 	
 	<br />
@@ -72,8 +74,7 @@
 	<div class="quickLink">
 	<div>&nbsp;</div>
 	<span class="navLink" rel="downloads">Download Wallet</span>
-	</div>
-	
+	</div>	
 	
 </div>
 
@@ -89,6 +90,103 @@ Summer is coming. Are you ready for the power bill? if you want to keep mining/p
 <p>Fair is fun...</p>
 
 <h4>No premine! No IPO!</h4>
+ 
+<br /><br />
+
+
+<h1 class="subHeader" style="font-size:1.2em !important;">Scrypt-OG Mining Calculator and Distribution Schedule</h1>
+<h2>enter your scrypt hashrate to get an estimated aiden hashrate</h2>
+<br />
+
+<div class="leftContent" style="border:0px; width:500px; margin-right:1em;">
+<table align="center" class="calc_table">
+  <tr>
+  	 <td class="calc_labels"><label>scrypt mining rate (megahash):</label></td>
+  	 <td class="calc_values"><input type="text" id="scrypt_hashrate" onchange="calcScrypt();"/></td>
+  </tr>
+	<tr>
+	   <td class="calc_labels"><label>aiden hash rate (megahash):</label></td>
+	   <td class="calc_values"><input id="hashrate" onchange="calcform();" type="text"><input type="hidden" id="hashtype" value="1000000" /></td>
+  </tr>
+	<tr>
+	   <td class="calc_labels"><label>difficulty:</label></td>
+	   <td class="calc_values"><input id="difficulty" onchange="calcform();" type="text"></td>
+	  </tr>
+	<tr>
+	   <td class="calc_labels"><label>block reward:</label></td>
+	   <td class="calc_values"><input id="reward" onchange="calcform();" type="text"></td>
+	  </tr>
+	<tr>
+	   <td class="calc_labels"><label>btc rate:</label></td>
+	   <td class="calc_values"><input id="btcrate" onchange="calcform();" type="text"></td>
+	  </tr>
+	<tr>
+	   <td class="calc_labels"><label>btc price (usd):</label></td>
+	   <td class="calc_values"><input id="btcprice" onchange="calcform();" type="text"></td>
+	</tr>
+</table>
+<table class="output_table">
+	<tr>
+	   <td class="calc_outputs"><label><span id="coinrewards">0</span></label></td>
+	   <td class="calc_labels"><label>aiden per day</label></td>
+	  </tr>
+	<tr>
+	   <td class="calc_outputs"><label><span id="btcrewards">0.00</span></label></td>
+	   <td class="calc_values"><label>btc per day</label></td>
+	  </tr>
+	<tr>
+	   <td class="calc_outputs"><label><span id="usdrewards">$0</span></label></td>
+	   <td class="calc_values"><label>per day</label></td>
+	</tr>
+</table>
+</div>	
+
+<div class="rightContent">
+<table class="distribution">
+	<tr class="dist_headers">
+		<td>blocks</td>
+		<td>reward</td>
+		<td>total coins</td>
+		<td>time (years)</td>
+	</tr>	
+	<tr id="dist_1">
+		<td>210000</td>
+		<td>50</td>
+		<td>10,500,000</td>
+		<td>0.19977</td>
+	</tr>
+	<tr id="dist_2">
+		<td>420000</td>
+		<td>25</td>
+		<td>21,000,000</td>
+		<td>0.59932</td>
+	</tr>
+	<tr id="dist_3">
+		<td>840000</td>
+		<td>12.5</td>
+		<td>31,500,000</td>
+		<td>1.39840</td>
+	</tr>
+	<tr id="dist_4">
+		<td>1680000</td>
+		<td>6.25</td>
+		<td>42,000,000</td>
+		<td>2.99658</td>
+	</tr>
+	<tr id="dist_5">
+		<td>3360000</td>
+		<td>3.125</td>
+		<td>52,500,000</td>
+		<td>6.19292</td>
+	</tr>
+	<tr id="dist_6">
+		<td>10080000</td>
+		<td>3.125</td>
+		<td>84,000,000</td>
+		<td>15.78196347</td>
+	</tr>
+</table>
+</div>
 
 <br />
 <!--
@@ -98,7 +196,7 @@ Summer is coming. Are you ready for the power bill? if you want to keep mining/p
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam turpis urna, semper facilisis ante id, convallis laoreet augue. Duis tempor pretium quam, elementum sollicitudin elit consequat ac. Aenean venenatis orci eget quam varius, in condimentum velit malesuada. Maecenas aliquet purus sit amet consectetur dapibus. Suspendisse sed lacus est. Ut rhoncus ullamcorper felis sed bibendum. Quisque vulputate eu ante quis faucibus. Nullam consequat accumsan feugiat. Aliquam quis egestas est. Maecenas rhoncus, nibh quis cursus sollicitudin, nisl enim auctor turpis, in fermentum mauris purus et neque.
 </p>
 -->	
-	
+	<div style="clear:both"></div>
 </div>
 
 <div id="mining" class="content hidden">
