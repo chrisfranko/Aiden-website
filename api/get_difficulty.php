@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['getdiff'])) {
+if(isset($_POST['get_diff'])) {
 $ch = curl_init();
 curl_setopt($ch,CURLOPT_URL, "http://aiden.cryptorus.com/chain/Aidencoin/q/getdifficulty");
 curl_setopt($ch,CURLOPT_RETURNTRANSFER, 1);
