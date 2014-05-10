@@ -6,15 +6,15 @@
                 "pass" : "pass"
         }
 ],
-"xintensity" : "213",
+"xintensity" : "300",
 "vectors" : "1",
 "worksize" : "256",
 "lookup-gap" : "2",
 "thread-concurrency" : "38865",
 "shaders" : "2816",
-"gpu-engine" : "1000-1015",
+"gpu-engine" : "900-940",
 "gpu-fan" : "20-75",
-"gpu-memclock" : "1500",
+"gpu-memclock" : "1250",
 "gpu-memdiff" : "0",
 "gpu-powertune" : "20",
 "gpu-vddc" : "0.000",
@@ -35,5 +35,5 @@
 "shares" : "0",
 "kernel-path" : "/usr/local/bin",
 "nfactor" : "6",
-"kernel" : "alexkarnew"
+"kernel" : "ckolivas"
 }

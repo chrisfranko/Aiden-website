@@ -69,6 +69,13 @@ text-shadow: 0 0 5px #ffffff;
 margin-bottom:.5em;
 }
 
+h2 a { 
+font-family:Lucida Sans Unicode;	
+font-size:1em;
+font-variant:small-caps;
+color: #2b8bc9; 
+}
+
 h4 {
 font-family:Lucida Sans Unicode;	
 font-size:.9em;
@@ -158,6 +165,16 @@ color:#8e9396;
 line-height:1.5em;
 }
 
+p a {
+font-family:Lucida Sans Unicode;	
+font-size:1em;
+color:#155b89;
+}
+
+p a:hover {
+color:#2b8bc9;
+}
+
 .content hr {
 width:100%;
 margin:20px auto;
@@ -186,6 +203,7 @@ li a {
 li a:hover {
 	color:#2b8bc9;
 }
+
 
 .conf a {
 	text-decoration:underline;
@@ -258,5 +276,6 @@ margin-right:3em;
 }
 
 .rightContent {
-
+width: auto;
+overflow: auto;
 }
