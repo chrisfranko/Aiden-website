@@ -229,6 +229,46 @@ font-size:0.9em;
 padding:0px;
 }
 
+
+.integrations a {
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.fadedImg {
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=75);
+
+  /* Netscape */
+  -moz-opacity: 0.75;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.75;
+
+  /* Good browsers */
+  opacity: 0.75;
+}
+
+.fadedImg:hover {
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=100);
+
+  /* Netscape */
+  -moz-opacity: 1.0;
+
+  /* Safari 1.x */
+  -khtml-opacity: 1.0;
+
+  /* Good browsers */
+  opacity: 1.0;
+}
+
 .hidden { display: none; }
 
 .sideBox {

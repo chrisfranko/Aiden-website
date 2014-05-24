@@ -17,6 +17,7 @@ $("#jMenu").jMenu({
 $('.navLink').click(function() {
 	var rel = $(this).attr('rel');
 	if(rel == 'mining') { $('#mining_header').removeClass('hidden'); $('#mining_config').addClass('hidden'); }
+	if(rel == 'downloads') { $('#downloads_info').removeClass('hidden'); $('#integration_info').addClass('hidden'); $('#integration_info div').each(function() { $(this).addClass('hidden'); }); }
 	$('.active').addClass('hidden').removeClass('active');
 	$('.selected').removeClass('selected');
 	$('#'+rel+'').addClass('active').show( "fade", { direction: "down" }, "slow" ).removeClass('hidden');
@@ -46,6 +47,21 @@ $('.conf li a').click(function() {
 	
 });
 
+// integrations handler
+$('.integrations li a').click(function() {
+	$('#downloads_info').addClass('hidden');
+	$('#integration_info').addClass('hidden');
+		
+	$('#'+$(this).attr('rel')).removeClass('hidden');
+	$('#integration_info').show( "fade", { direction: "down" }, "slow" ).removeClass('hidden');	
+});
+
+// query string redirection
+var $_GET = get_query();
+if($_GET['redirect'] == 'woocommerce') {
+	$("a[rel='downloads']").click();	
+	$("a[rel='wooCommerce']").click();	
+}
 
 // get current mining difficulty
 $.post("api/get_difficulty.php",
@@ -101,3 +117,13 @@ $('.aiden').hover(
 );*/
 	
 });
+
+function get_query(){
+  var url = location.href;
+  var qs = url.substring(url.indexOf('?') + 1).split('&');
+  for(var i = 0, result = {}; i < qs.length; i++){
+      qs[i] = qs[i].split('=');
+      result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+  return result;
+}
